@@ -1,26 +1,18 @@
-
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Hero from './Components/Hero'
-import Navbar from './Components/Navbar'
-import Projects from './Components/Projects'
-import GlobalStyling from './Components/Styles/Global'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import LandingScreen from "./Components/LandingScreen";
+import Navbar from "./Components/Navbar";
+import ProjectScreen from "./Components/ProjectsScreen";
+import GlobalStyling from "./Components/Styles/Global";
 
 function App() {
-
   return (
     <div className="App">
       <GlobalStyling />
-  
-      <div style={{minHeight: '100vh', backgroundColor: '#1D2228'}}>
-        <Navbar />
-        <Hero />
-      </div>
-      {/* <div style={{minHeight: '100vh'}}> */}
-        <Projects />
-      {/* </div> */}
+      <LandingScreen />
+      <ProjectScreen />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

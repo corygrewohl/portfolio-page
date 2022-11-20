@@ -10,8 +10,10 @@ const GlobalStyling = createGlobalStyle`
 }
 
 body {
-  
-  height: 100vh;
+  /* overflow-y: auto;
+    overflow: overlay;
+    overflow-x: none !important; */
+  /* width: 100%; */
 }
 
 .svg_icons {
