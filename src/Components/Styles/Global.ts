@@ -6,6 +6,7 @@ const GlobalStyling = createGlobalStyle`
     padding: 0;
 
     font-family: 'Poppins', sans-serif;
+    color: #E1E2E2;
 
 }
 
@@ -19,6 +20,12 @@ body {
 .svg_icons {
     transform: scale(1.8);
     text-align: center;
+  }
+
+  h2.title {
+    font-size: 45px;
+    font-weight: 500;
+    align-self: flex-start;
   }
 `;
 

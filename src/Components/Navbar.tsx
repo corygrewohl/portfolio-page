@@ -3,16 +3,17 @@ import NavbarContainer from "./Styles/Navbar.styled";
 import Instagram from "../assets/instagram.png";
 import LinkedIn from "../assets/linkedin.png";
 import GitHub from "../assets/github.png";
+import { Link } from "react-scroll";
 
 function Navbar() {
   return (
     <NavbarContainer>
       <div className="header-container">
-        <h1>Cory Grewohl</h1>
+        <h1>Cory<span>Grewohl</span></h1>
         <div className="navigation">
-          <a href="#">Projects</a>
-          <a href="#">Skills</a>
-          <a href="#">About</a>
+          <Link to="projects" smooth="easeInOutQuart">Projects</Link>
+          <Link to="skills" smooth="easeInOutQuart"> Skills</Link>
+          <Link to="aboutme" smooth="easeInOutQuart"> About</Link>
         </div>
       </div>
       <div className="social-media">

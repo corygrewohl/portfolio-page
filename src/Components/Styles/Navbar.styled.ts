@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const NavbarContainer = styled.div`
-    height: 121px;
+    height: 80px;
     background-color: #181c21;
+    border-bottom: solid 4px #181C21;
     padding: 0px 12em;
 
     display: flex;
@@ -10,32 +11,28 @@ const NavbarContainer = styled.div`
     justify-content: space-between;
 
   .header-container {
-
     display: flex;
-    gap: 106px;
+    gap: 100px;
+    /* align-items: flex-end; */
   }
 
   h1 {
-    font-size: 26;
+    font-family: 'Bebas Neue';
+    font-size: 40px;
     font-weight: 500;
-    color: #fb8122;
-
-    display: flex;
-    align-items: center;
+    span {
+      color: #fb8122;
+      font-family: inherit;
+    }
+    transform: translateY(5px);
     height: 100%;
   }
 
   .navigation {
     display: flex;
-    gap: 55px;
+    gap: 50px;
     align-items: center;
-
-    a {
-      text-decoration: none;
-      color: #e1e2e2;
-      font-size: 24;
-      font-weight: 300;
-    }
+    font-size: 24px;
   }
 
   .social-media {
