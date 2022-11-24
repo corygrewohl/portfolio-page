@@ -6,7 +6,7 @@ export const ProjectItemContainer = styled.div`
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #1D2228;
+  background-color: #1d2228;
 
   min-height: 450px;
   min-width: 1000px;
@@ -18,7 +18,7 @@ export const ProjectItemContainer = styled.div`
     color: #fb8122;
   }
 
-  &:nth-child(2n) {
+  &:nth-child(2n+1) {
     flex-direction: row-reverse;
 
     h2 {

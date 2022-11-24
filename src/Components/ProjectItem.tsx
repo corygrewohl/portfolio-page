@@ -25,7 +25,7 @@ const ProjectItem: FC<ProjectItemProps> = ({
 }) => {
   return (
     <ProjectItemContainer>
-      <div>
+      <div className="project-item">
         <h2>{name}</h2>
         <p>{description}</p>
         <SkillsListContainer>
@@ -41,8 +41,8 @@ const ProjectItem: FC<ProjectItemProps> = ({
           colorScheme="green"
           color="#E1E2E2"
         >
-          <Button backgroundColor="#0C7C59">View Code</Button>
-          <Button backgroundColor="#0C7C59">Live Demo</Button>
+          <Button backgroundColor="#0C7C59"><a href={repo} target='_blank'>View Code</a></Button>
+          <Button backgroundColor="#0C7C59"><a href={demo} target='_blank'>Live Demo</a></Button>
         </ButtonGroup>
       </div>
       <img src={image} alt="" className="project-image"/>

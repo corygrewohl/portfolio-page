@@ -19,7 +19,10 @@ const ProjectsContainer = styled.div`
   align-items: center;
   gap: 20px;
 
-  
+  h2.title {
+    background-color: #1d222899;
+    padding-inline: 10px 10px;
+  }
 `;
 
 export default ProjectsContainer;

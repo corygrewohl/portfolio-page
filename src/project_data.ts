@@ -16,49 +16,51 @@ import MemoryCard from './assets/Projects/memory-card.png'
 import TicTacToe from './assets/Projects/tic-tac-toe.png'
 import TodoList from './assets/Projects/todo-list.png'
 import WeatherApp from './assets/Projects/weather-app.png'
+import Guavah1 from './assets/Projects/guavah1.png';
+import Guavah2 from './assets/Projects/guavah2.png';
 
 
 const projects = [
     {
         id: 0,
         name: 'Shopping Cart',
-        description: 'A fake store website. I built the cart functionality with context and redux in order to learn both!',
+        description: 'A fake store website. I built the cart functionality twice—with context and redux in order to learn both!',
         image: ShoppingCart,
         skills: [React, TS, Redux, StyledComponents, Vite],
         date: 'Oct 2022 - Nov 2022',
         repo: 'https://github.com/corygrewohl/shopping-cart',
-        demo: 'eloquent-muffin-227d49.netlify.app'
+        demo: 'https://eloquent-muffin-227d49.netlify.app'
     },
     {
         id: 1,
         name: 'Memory Card Game',
-        description: 'A memory testing game built in Typescript, React, and Sass',
+        description: 'A memory testing game built in Typescript, React, and Sass.',
         image: MemoryCard,
         skills: [React, TS, Sass, Webpack],
         date: 'Sept 2022 - Oct 2022',
         repo: 'https://github.com/corygrewohl/memory-card',
         demo: 'https://corygrewohl.github.io/memory-card/'
     },
-    // {
-    //     id: 2,
-    //     name: 'Guavah 1.0',
-    //     description: 'A mobile app built in React Native and AWS for ranking restaurants.',
-    //     image: '',
-    //     skills: [React, JS, CSS],
-    //     date: 'Jan 2022 - Apr 2022',
-    //     repo: 'https://github.com/Guavah-Team',
-    //     demo: 'https://www.guavah.net/'
-    // },
-    // {
-    //     id: 3,
-    //     name: 'Guavah 2.0',
-    //     description: 'Recreating Guavah with a Typescript/Node/Firebase backend.',
-    //     image: '',
-    //     skills: [TS, Node, Firebase ],
-    //     date: 'Jan 2022 - Apr 2022',
-    //     repo: 'https://github.com/orgs/Guavah-LLC/repositories',
-    //     demo: 'https://www.guavah.net/'
-    // },
+    {
+        id: 2,
+        name: 'Guavah 1.0',
+        description: 'A mobile app built in React Native and AWS for ranking restaurants. The app\'s trailer is at guavah.net',
+        image: Guavah1,
+        skills: [React, JS, CSS],
+        date: 'Jan 2022 - Apr 2022',
+        repo: 'https://github.com/Guavah-Team',
+        demo: 'https://www.guavah.net/'
+    },
+    {
+        id: 3,
+        name: 'Guavah 2.0',
+        description: 'Recreating Guavah with a Typescript/Node/Firebase backend.',
+        image: Guavah2,
+        skills: [TS, Node, Firebase ],
+        date: 'Jan 2022 - Apr 2022',
+        repo: 'https://github.com/orgs/Guavah-LLC/repositories',
+        demo: 'https://www.guavah.net/'
+    },
     {
         id: 4,
         name: 'Weather App',

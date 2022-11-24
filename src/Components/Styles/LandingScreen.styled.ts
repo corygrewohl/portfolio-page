@@ -39,8 +39,8 @@ export const HeroContainer = styled.div`
     }
 
     .meet-me {
-      font-size: 20px;
-      color: #3c91e6;
+      font-size: 24px;
+      color: #fb8122;
     }
   }
 `;
