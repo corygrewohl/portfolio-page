@@ -14,7 +14,6 @@ export const LandingScreenContainer = styled.div`
   color: #0c7c59;
 
   @media (max-width: 990px) {
-    /* background-image: none; */
     background-size: cover;
   }
 `;
@@ -39,6 +38,9 @@ export const HeroContainer = styled.div`
       * {
         color: #e1e2e2;
       }
+      @media (max-width: 500px) {
+        font-size: 36px;
+      }
     }
 
     .meet-me {
@@ -51,6 +53,9 @@ export const HeroContainer = styled.div`
 
     ${Arrows} {
       display: none;
+    }
+    .hero-statement {
+    font-size: 10px;
     }
   }
 `;

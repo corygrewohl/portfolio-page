@@ -12,7 +12,7 @@ const ProjectsContainer = styled.div`
   background-repeat: no-repeat;
   background-position: left 10%;
   background-attachment: fixed;
-  padding: 4em 12em 0em 12em;
+  padding: 4em 12em 2em 12em;
 
   display: flex;
   flex-direction: column;
@@ -28,6 +28,10 @@ const ProjectsContainer = styled.div`
 
   @media (max-width: 1020px) {
     background-size: cover;
+  }
+
+  @media (max-width: 500px) {
+    padding-inline: 0px 0px;
   }
 `;
 

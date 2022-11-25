@@ -68,7 +68,7 @@ function SkillsScreen() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box>Front End</Box>
+                  <Box>🎨Front End</Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
@@ -88,7 +88,7 @@ function SkillsScreen() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box>Back End</Box>
+                  <Box>🖧Back End</Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
@@ -108,7 +108,7 @@ function SkillsScreen() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box>Other Skills</Box>
+                  <Box>🏋️‍♂️Other Skills</Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
