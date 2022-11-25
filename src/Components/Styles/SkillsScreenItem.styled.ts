@@ -34,6 +34,8 @@ const SkillsScreenItemContainer = styled.div`
     img {
       width: auto;
       max-height: 75px;
+      min-height: 75px;
+      min-width: 75px;
       animation: imgMoveOut 0.5s;
 
       &:hover {
@@ -46,6 +48,9 @@ const SkillsScreenItemContainer = styled.div`
         }
       }
     }
+  }
+
+  @media (max-width: 1150px) {
   }
 `;
 

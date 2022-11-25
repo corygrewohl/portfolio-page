@@ -6,7 +6,7 @@ const GlobalStyling = createGlobalStyle`
     padding: 0;
 
     font-family: 'Poppins', sans-serif;
-    color: #E1E2E2;
+    /* color: #E1E2E2; */
 
 }
 

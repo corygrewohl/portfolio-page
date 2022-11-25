@@ -12,14 +12,18 @@ export const ProjectItemContainer = styled.div`
   min-width: 1000px;
   border: solid 2px #e1e2e2;
 
+  color: #e1e2e2;
+
   h2 {
     font-size: 24px;
     font-weight: 500;
     color: #fb8122;
   }
 
-  &:nth-child(2n+1) {
-    flex-direction: row-reverse;
+  &:nth-child(2n + 1) {
+    @media (min-width: 1020px) {
+      flex-direction: row-reverse;
+    }
 
     h2 {
       color: #3c91e6;
@@ -35,6 +39,12 @@ export const ProjectItemContainer = styled.div`
   .project-info-buttons {
     margin-top: 20px;
   }
+
+  @media (max-width: 1020px) {
+    padding: 2em;
+    min-width: 100px;
+    flex-direction: column;
+  }
 `;
 
 export const SkillsListContainer = styled.div`
@@ -45,5 +55,9 @@ export const SkillsListContainer = styled.div`
   img {
     width: auto;
     max-height: 50px;
+    
+    @media (max-width: 1020px) {
+      max-height: 20px;
+    }
   }
 `;

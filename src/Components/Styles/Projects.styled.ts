@@ -19,9 +19,15 @@ const ProjectsContainer = styled.div`
   align-items: center;
   gap: 20px;
 
+  color: #E1E2E2;
+
   h2.title {
     background-color: #1d222899;
     padding-inline: 10px 10px;
+  }
+
+  @media (max-width: 1020px) {
+    background-size: cover;
   }
 `;
 

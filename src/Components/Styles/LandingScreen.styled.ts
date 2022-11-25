@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Lego from '../../assets/LegoFull.jpg'
+import Lego from "../../assets/LegoFull.jpg";
+import Arrows from "../Styles/Arrows.styled";
 
 export const LandingScreenContainer = styled.div`
   height: 100vh;
@@ -10,9 +11,12 @@ export const LandingScreenContainer = styled.div`
   background-repeat: no-repeat;
   background-position: left 10%;
   background-attachment: fixed;
-  color: #0C7C59;
+  color: #0c7c59;
 
-
+  @media (max-width: 990px) {
+    /* background-image: none; */
+    background-size: cover;
+  }
 `;
 
 export const HeroContainer = styled.div`
@@ -27,20 +31,26 @@ export const HeroContainer = styled.div`
     flex-direction: column;
     gap: 5px;
     max-width: 500px;
-  color: #0C7C59;
-
+    color: #0c7c59;
 
     .hero-statement {
       font-size: 60px;
       font-weight: 700;
       * {
-        color: #E1E2E2;
+        color: #e1e2e2;
       }
     }
 
     .meet-me {
       font-size: 24px;
       color: #fb8122;
+    }
+  }
+  @media (max-width: 990px) {
+    padding: 2em;
+
+    ${Arrows} {
+      display: none;
     }
   }
 `;

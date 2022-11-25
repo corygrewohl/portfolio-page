@@ -2,7 +2,6 @@ import React from "react";
 import ProjectsContainer from "./Styles/Projects.styled";
 import Projects from "../project_data";
 import ProjectItem from "./ProjectItem";
-import Fade from 'react-reveal/Fade';
 
 function ProjectsScreen() {
   return (
@@ -10,7 +9,6 @@ function ProjectsScreen() {
       <h2 className="title" id="projects">Projects</h2>
       {Projects.map((currentProject) => {
         return (
-          <Fade left>
             <ProjectItem
               key={currentProject.id}
               id={currentProject.id}
@@ -22,7 +20,6 @@ function ProjectsScreen() {
               repo={currentProject.repo}
               demo={currentProject.demo}
             />
-          </Fade>
         );
       })}
     </ProjectsContainer>
