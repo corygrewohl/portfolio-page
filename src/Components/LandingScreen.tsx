@@ -24,7 +24,7 @@ function LandingScreen() {
           <h1 className="hero-statement">
             <Typed 
               strings={[
-                "Hardworking, Passionate, Front End Developer"
+                "Hardworking, <br> Passionate, <br> Front End <br> Developer"
               ]}
               typeSpeed={40}
             />

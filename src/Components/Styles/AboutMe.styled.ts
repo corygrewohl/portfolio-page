@@ -8,13 +8,13 @@ export const AboutMeContainer = styled.div`
     padding: 2em;
   }
 
-  color: #E1E2E2;
+  color: #e1e2e2;
 `;
 
 export const AboutMeContentContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  gap: 200px;
+  justify-content: center;
+  gap: 50px;
 
   img {
     /* width: auto; */
@@ -24,21 +24,31 @@ export const AboutMeContentContainer = styled.div`
     border-radius: 10px;
   }
 
+  .info {
+    max-width: 500px;
+
+    img {
+      max-height: 22px;
+      width: auto;
+      border: none;
+      border-radius: 0px;
+      display: inline;
+    }
+  }
+
   @media (max-width: 1375px) {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
-    
+
     ${AboutMeContainer} {
       /* height: 800px; */
       padding: 2em;
-      
     }
     img {
       /* width: auto; */
       max-height: 500px;
     }
-
   }
 `;

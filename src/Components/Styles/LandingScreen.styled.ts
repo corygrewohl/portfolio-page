@@ -29,7 +29,7 @@ export const HeroContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 5px;
-    max-width: 500px;
+    /* max-width: 500px; */
     color: #0c7c59;
 
     .hero-statement {

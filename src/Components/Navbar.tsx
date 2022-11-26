@@ -16,7 +16,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 function Navbar() {
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
 
   return (
     <NavbarContainer>
@@ -25,12 +25,12 @@ function Navbar() {
           Cory<span>Grewohl</span>
         </h1>
         <div className="navigation">
-          <Link to="projects" smooth="easeInOutQuart">
-            Projects
-          </Link>
           <Link to="skills" smooth="easeInOutQuart">
             {" "}
             Skills
+          </Link>
+          <Link to="projects" smooth="easeInOutQuart">
+            Projects
           </Link>
           <Link to="aboutme" smooth="easeInOutQuart">
             {" "}
@@ -56,19 +56,19 @@ function Navbar() {
           colorScheme="linkedin"
           onClick={onOpen}
         ></IconButton>
-        <Drawer placement="top" onClose={onClose} isOpen={isOpen}>
+        <Drawer placement="top" onClose={onClose} isOpen={isOpen} >
           <DrawerOverlay />
           <DrawerContent bgColor='#1D2228' color='#E1E2E2'>
             <DrawerBody display='flex' justifyContent='space-between' padding='2em' fontSize='26px20px' textAlign='center'>
                 {/* <div className="hamburger-navigation"> */}
-                  <Link to="projects" smooth="easeInOutQuart">
-                    Projects
-                  </Link>
-                  <Link to="skills" smooth="easeInOutQuart">
+                  <Link to="skills" smooth="easeInOutQuart" onClick={() => onClose()}>
                     {" "}
                     Skills
                   </Link>
-                  <Link to="aboutme" smooth="easeInOutQuart">
+                  <Link to="projects" smooth="easeInOutQuart" onClick={() => onClose()}>
+                    Projects
+                  </Link>
+                  <Link to="aboutme" smooth="easeInOutQuart" onClick={() => onClose()}>
                     {" "}
                     About
                   </Link>
