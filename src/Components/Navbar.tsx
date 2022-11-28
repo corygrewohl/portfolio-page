@@ -16,7 +16,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 
 function Navbar() {
-  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
+  const { isOpen, onOpen, onClose} = useDisclosure();
 
   return (
     <NavbarContainer>
