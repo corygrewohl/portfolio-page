@@ -6,13 +6,19 @@ export const ProjectItemContainer = styled.div`
   align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #1d2228;
+  background-color: #181C21;
 
   min-height: 450px;
-  min-width: 1000px;
-  border: solid 2px #e1e2e2;
+  min-width: 100%;
+  border: solid 3px #e1e2e2;
 
   color: #e1e2e2;
+
+  transition: background-color 0.3s, border 0.5s;
+  &:hover {
+    background-color: #1d2228;
+    border: solid 3px #3C91E6;
+  }
 
   h2 {
     font-size: 24px;
@@ -25,14 +31,18 @@ export const ProjectItemContainer = styled.div`
       flex-direction: row-reverse;
     }
 
+    &:hover {
+      background-color: #1d2228;
+      border: solid 3px #FB8122;
+  }
+
     h2 {
       color: #3c91e6;
     }
   }
 
   .project-image {
-    width: auto;
-    max-height: 350px;
+    width: 60%;
     border: solid 3px #0c7c59;
   }
 
@@ -44,18 +54,22 @@ export const ProjectItemContainer = styled.div`
     padding: 2em;
     min-width: 100px;
     flex-direction: column;
+    .project-image {
+      width: 100%;
+    }
   }
 `;
 
 export const SkillsListContainer = styled.div`
   padding: 20px 0px;
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 
   img {
     width: auto;
     max-height: 50px;
-    
+
     @media (max-width: 1020px) {
       max-height: 20px;
     }

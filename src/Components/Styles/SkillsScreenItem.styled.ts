@@ -6,29 +6,7 @@ const SkillsScreenItemContainer = styled.div`
 
     p {
       opacity: 0;
-    }
-
-    @keyframes fadeInText {
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes imgMoveIn {
-      from {
-        transform: translateY(0px);
-      }
-      to {
-        transform: translateY(-10px);
-      }
-    }
-    @keyframes imgMoveOut {
-      from {
-        transform: translateY(-10px);
-      }
-      to {
-        transform: translateY(0px);
-      }
+      transition: opacity 0.5s;
     }
 
     img {
@@ -36,15 +14,15 @@ const SkillsScreenItemContainer = styled.div`
       max-height: 75px;
       min-height: 75px;
       min-width: 75px;
-      animation: imgMoveOut 0.5s;
+      transition: transform 0.5s;
 
       &:hover {
-        animation: imgMoveIn 0.5s forwards;
+        transform: translateY(-10px);
       }
 
       &:hover {
         & ~ p {
-          animation: fadeInText 0.5s forwards;
+          opacity: 1;
         }
       }
     }

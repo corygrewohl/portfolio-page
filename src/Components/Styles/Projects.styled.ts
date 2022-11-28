@@ -28,6 +28,7 @@ const ProjectsContainer = styled.div`
 
   @media (max-width: 1020px) {
     background-size: cover;
+    padding: 4em 8em 2em 8em;
   }
 
   @media (max-width: 500px) {
