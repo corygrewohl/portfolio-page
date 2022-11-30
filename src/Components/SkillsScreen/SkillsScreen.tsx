@@ -4,9 +4,9 @@ import {
   SkillsScreenContainer,
   SkillsCategoryTitle,
   SkillsCategory,
-} from "./Styles/SkillsScreen.styled";
-import { frontend, backend, other } from "../skills_data";
-import SkillsScreenItem from "./SkillsScreenItem";
+} from "./SkillsScreen.styled";
+import { frontend, backend, other } from "../../Data/skills_data";
+import SkillsScreenItem from "./SkillsScreenItem/SkillsScreenItem";
 import {
   Accordion,
   AccordionItem,
@@ -24,7 +24,6 @@ function SkillsScreen() {
         <div className="full-skills">
           <SkillsCategoryTitle>Frontend Skills</SkillsCategoryTitle>
           <SkillsCategory>
-            <br />
             {frontend.map((currentSkill) => {
               return (
                 <SkillsScreenItem
@@ -37,7 +36,6 @@ function SkillsScreen() {
           </SkillsCategory>
           <SkillsCategoryTitle>Backend Skills</SkillsCategoryTitle>
           <SkillsCategory>
-            <br />
             {backend.map((currentSkill) => {
               return (
                 <SkillsScreenItem
@@ -50,7 +48,6 @@ function SkillsScreen() {
           </SkillsCategory>
           <SkillsCategoryTitle>Other Skills</SkillsCategoryTitle>
           <SkillsCategory>
-            <br />
             {other.map((currentSkill) => {
               return (
                 <SkillsScreenItem

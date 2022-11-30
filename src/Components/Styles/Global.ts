@@ -4,17 +4,11 @@ const GlobalStyling = createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
     font-family: 'Poppins', sans-serif;
     /* color: #E1E2E2; */
 
-}
-
-body {
-  /* overflow-y: auto;
-    overflow: overlay;
-    overflow-x: none !important; */
-  /* width: 100%; */
 }
 
 .svg_icons {
@@ -26,6 +20,10 @@ body {
     font-size: 45px;
     font-weight: 500;
     align-self: flex-start;
+
+    @media (min-width: 3000px) {
+      font-size: 56px;
+    }
   }
 `;
 

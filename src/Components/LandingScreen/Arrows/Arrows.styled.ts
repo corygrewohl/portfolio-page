@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const ArrowsContainer = styled.div`
   span {
+    
     display: block;
     width: 80px;
     height: 80px;

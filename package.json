@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.8",
     "react-typed": "^1.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",

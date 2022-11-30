@@ -1,5 +1,5 @@
 import React from "react";
-import ArrowsContainer from "./Styles/Arrows.styled";
+import ArrowsContainer from "./Arrows.styled";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 function Arrows() {

@@ -17,11 +17,15 @@ export const AboutMeContentContainer = styled.div`
   gap: 50px;
 
   img {
-    /* width: auto; */
+    width: auto;
     max-height: 550px;
 
     border: 4px solid #e1e2e2;
     border-radius: 10px;
+
+    @media (min-width: 3000px) {
+      max-height: 700px;
+    }
   }
 
   .info {
@@ -33,6 +37,12 @@ export const AboutMeContentContainer = styled.div`
       border: none;
       border-radius: 0px;
       display: inline;
+    }
+    @media (min-width: 3000px) {
+      font-size: 26px;
+      img {
+        max-height: 30px;
+      }
     }
   }
 

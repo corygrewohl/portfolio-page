@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 const NavbarContainer = styled.div`
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
   height: 80px;
   background-color: #181c21;
   border-bottom: solid 4px #181c21;

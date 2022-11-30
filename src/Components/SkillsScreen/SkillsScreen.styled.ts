@@ -1,11 +1,9 @@
 import styled from "styled-components";
-import Lego from '../../assets/legobricks.jpg';
+import Lego from "../../assets/legobricks.jpg";
 
 export const SkillsScreenContainer = styled.div`
-  /* height: 90vh;   */
-  min-height: 750px;
-  color: #E1E2E2;
-  background-color: #1d2228;
+  color: #e1e2e2;
+  background-color: #181c21;
   /* background-image: url(${Lego}); */
   background-size: 115%;
   background-repeat: no-repeat;
@@ -25,9 +23,13 @@ export const SkillsItems = styled.div`
   flex-direction: column;
   gap: 30px;
 
+  padding-bottom: 6em;
+  border-bottom: 1px solid white;
+
   .frontend,
   .backend,
   .other {
+    padding-left: 0;
   }
 
   .accordion-skills {
@@ -45,15 +47,19 @@ export const SkillsItems = styled.div`
 
     padding: none;
   }
-
-
 `;
 
 export const SkillsCategoryTitle = styled.h2`
-  font-size: 24px;
+  font-size: 26px;
+
+  @media (min-width: 3000px) {
+      font-size: 36px;
+    }
 `;
 
 export const SkillsCategory = styled.div`
-  display: flex; 
-  gap: 40px;
+  margin: 10px 0px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
 `;

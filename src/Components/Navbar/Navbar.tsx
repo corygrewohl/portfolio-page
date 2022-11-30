@@ -1,8 +1,8 @@
 import React from "react";
-import NavbarContainer from "./Styles/Navbar.styled";
-import Instagram from "../assets/instagram.png";
-import LinkedIn from "../assets/linkedin.png";
-import GitHub from "../assets/github.png";
+import NavbarContainer from "./Navbar.styled";
+import Instagram from "../../assets/instagram.png";
+import LinkedIn from "../../assets/linkedin.png";
+import GitHub from "../../assets/github.png";
 import { Link } from "react-scroll";
 import {
   Drawer,

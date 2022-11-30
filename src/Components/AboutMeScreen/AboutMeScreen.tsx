@@ -2,16 +2,16 @@ import React from "react";
 import {
   AboutMeContainer,
   AboutMeContentContainer,
-} from "./Styles/AboutMe.styled";
-import AboutMePic from "../assets/aboutmepic.jfif";
+} from "./AboutMe.styled";
+import AboutMePic from "../../assets/aboutmepic.jfif";
 
-import ReactPic from "../assets/Skills/react.png"
-import HTMLPic from "../assets/Skills/html.png"
-import CSSPic from "../assets/Skills/css.png"
-import JSPic from "../assets/Skills/js.png"
-import TSPic from "../assets/Skills/ts.png"
-import ReduxPic from "../assets/Skills/redux.png"
-import StyledCompnentsPic from "../assets/Skills/styled-components.png"
+import ReactPic from "../../assets/Skills/react.png"
+import HTMLPic from "../../assets/Skills/html.png"
+import CSSPic from "../../assets/Skills/css.png"
+import JSPic from "../../assets/Skills/js.png"
+import TSPic from "../../assets/Skills/ts.png"
+import ReduxPic from "../../assets/Skills/redux.png"
+import StyledCompnentsPic from "../../assets/Skills/styled-components.png"
 
 function AboutMeScreen() {
   return (

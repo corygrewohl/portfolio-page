@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import Typed from "react-typed";
 
-import Arrows from "./Arrows";
-import Navbar from "./Navbar";
+import Arrows from "./Arrows/Arrows";
+import Navbar from "../Navbar/Navbar";
 import {
   LandingScreenContainer,
   HeroContainer,
   HeroImageContainer,
-} from "./Styles/LandingScreen.styled";
+} from "./LandingScreen.styled";
 import Lego from "../assets/lego.jpg";
 
 function LandingScreen() {
