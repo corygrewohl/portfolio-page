@@ -11,10 +11,8 @@ const SkillsScreenItem: FC<SkillsItemProps> = ({ name, image }) => {
 
   return (
     <SkillsScreenItemContainer>
-      <div className="skill">
         <img src={image} alt="" />
         <p>{name}</p>
-      </div>
     </SkillsScreenItemContainer>
   );
 };

@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Carousel } from "./ProjectCarousel.styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper";
-import { Button, ButtonGroup, createIcon, Icon } from "@chakra-ui/react";
+import { Button, ButtonGroup } from "@chakra-ui/react";
 
 interface ProjectCarouselProps {
   slides: {
@@ -26,7 +26,7 @@ interface ProjectCarouselProps {
 
 const ProjectCarousel: FC<ProjectCarouselProps> = ({ slides }) => {
 
-  const slideArray = slides.map((slide, index) => {
+  const slideArray = slides.map((slide) => {
     return (
       <SwiperSlide className="project-slide">
         <img src={slide.image} alt="" className="image" />
@@ -74,15 +74,6 @@ const ProjectCarousel: FC<ProjectCarouselProps> = ({ slides }) => {
         {slideArray}
       </Swiper>
     </Carousel>
-
-    /* {slides.map((slide, index) => {
-        return (
-          <SwiperSlide>
-            <img src={slide.image} alt="" className="image" />
-            <h2>test</h2>
-          </SwiperSlide>
-        );
-      })} */
   );
 };
 

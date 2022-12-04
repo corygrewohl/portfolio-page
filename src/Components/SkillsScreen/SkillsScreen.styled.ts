@@ -4,7 +4,6 @@ import Lego from "../../assets/legobricks.jpg";
 export const SkillsScreenContainer = styled.div`
   color: #e1e2e2;
   background-color: #181c21;
-  /* background-image: url(${Lego}); */
   background-size: 115%;
   background-repeat: no-repeat;
   background-position: left 10%;
@@ -18,19 +17,13 @@ export const SkillsScreenContainer = styled.div`
 `;
 
 export const SkillsItems = styled.div`
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-
+  
+  padding-top: 20px;
   padding-bottom: 6em;
   border-bottom: 1px solid white;
-
-  .frontend,
-  .backend,
-  .other {
-    padding-left: 0;
-  }
 
   .accordion-skills {
     display: none;
@@ -39,13 +32,10 @@ export const SkillsItems = styled.div`
   @media (max-width: 1150px) {
     .accordion-skills {
       display: block;
-      padding: none;
     }
     .full-skills {
       display: none;
     }
-
-    padding: none;
   }
 `;
 

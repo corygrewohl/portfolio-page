@@ -1,20 +1,12 @@
-import React, { useEffect, useState } from "react";
-import {
-  SkillsItems,
-  SkillsScreenContainer,
-  SkillsCategoryTitle,
-  SkillsCategory,
-} from "./SkillsScreen.styled";
-import { frontend, backend, other } from "../../Data/skills_data";
+import { SkillsItems, SkillsScreenContainer, SkillsCategoryTitle, SkillsCategory } from "./SkillsScreen.styled";
 import SkillsScreenItem from "./SkillsScreenItem/SkillsScreenItem";
-import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-  Box,
-} from "@chakra-ui/react";
+import { frontend, backend, other } from "../../Data/skills_data";
+import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, Box } from "@chakra-ui/react";
+
+const frontendArray = frontend.map((currentSkill) => { return <SkillsScreenItem key={currentSkill.id} name={currentSkill.name} image={currentSkill.image} /> })
+const backendArray = backend.map((currentSkill) => { return <SkillsScreenItem key={currentSkill.id} name={currentSkill.name} image={currentSkill.image} /> })
+const otherArray = other.map((currentSkill) => { return <SkillsScreenItem key={currentSkill.id} name={currentSkill.name} image={currentSkill.image} /> })
+
 
 function SkillsScreen() {
   return (
@@ -24,39 +16,15 @@ function SkillsScreen() {
         <div className="full-skills">
           <SkillsCategoryTitle>Frontend Skills</SkillsCategoryTitle>
           <SkillsCategory>
-            {frontend.map((currentSkill) => {
-              return (
-                <SkillsScreenItem
-                  key={currentSkill.id}
-                  name={currentSkill.name}
-                  image={currentSkill.image}
-                />
-              );
-            })}
+            {frontendArray}
           </SkillsCategory>
           <SkillsCategoryTitle>Backend Skills</SkillsCategoryTitle>
           <SkillsCategory>
-            {backend.map((currentSkill) => {
-              return (
-                <SkillsScreenItem
-                  key={currentSkill.id}
-                  name={currentSkill.name}
-                  image={currentSkill.image}
-                />
-              );
-            })}
+            {backendArray}
           </SkillsCategory>
           <SkillsCategoryTitle>Other Skills</SkillsCategoryTitle>
           <SkillsCategory>
-            {other.map((currentSkill) => {
-              return (
-                <SkillsScreenItem
-                  key={currentSkill.id}
-                  name={currentSkill.name}
-                  image={currentSkill.image}
-                />
-              );
-            })}
+            {otherArray}
           </SkillsCategory>
         </div>
 
@@ -70,15 +38,7 @@ function SkillsScreen() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} display="flex" gap='20px' flexWrap='wrap'>
-                {frontend.map((currentSkill) => {
-                  return (
-                    <SkillsScreenItem
-                      key={currentSkill.id}
-                      name={currentSkill.name}
-                      image={currentSkill.image}
-                    />
-                  );
-                })}
+                {frontendArray}
               </AccordionPanel>
             </AccordionItem>
 
@@ -90,15 +50,7 @@ function SkillsScreen() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} display="flex" gap='20px' flexWrap='wrap'>
-                {backend.map((currentSkill) => {
-                  return (
-                    <SkillsScreenItem
-                      key={currentSkill.id}
-                      name={currentSkill.name}
-                      image={currentSkill.image}
-                    />
-                  );
-                })}
+                {backendArray}
               </AccordionPanel>
             </AccordionItem>
 
@@ -110,15 +62,7 @@ function SkillsScreen() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb={4} display="flex" gap='20px' flexWrap='wrap'>
-                {other.map((currentSkill) => {
-                  return (
-                    <SkillsScreenItem
-                      key={currentSkill.id}
-                      name={currentSkill.name}
-                      image={currentSkill.image}
-                    />
-                  );
-                })}
+                {otherArray}
               </AccordionPanel>
             </AccordionItem>
           </Accordion>

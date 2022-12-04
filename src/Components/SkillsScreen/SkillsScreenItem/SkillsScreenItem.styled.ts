@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 const SkillsScreenItemContainer = styled.div`
-  /* text-align: center; */
-  /* margin: 0; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   p {
     opacity: 0;
     transition: opacity 0.5s;
     font-size: 21px;
+    text-align: center;
 
     @media (min-width: 3000px) {
       font-size: 26px;
@@ -15,12 +17,9 @@ const SkillsScreenItemContainer = styled.div`
   }
 
   img {
-    display: flex;
-    justify-content: center;
     width: auto;
     max-height: 100px;
-    /* min-height: 75px;
-      min-width: 75px; */
+    align-self: center;
     transition: transform 0.5s;
 
     &:hover {
@@ -32,9 +31,6 @@ const SkillsScreenItemContainer = styled.div`
         opacity: 1;
       }
     }
-  }
-
-  @media (max-width: 1150px) {
   }
 `;
 
